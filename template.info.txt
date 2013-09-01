@@ -1,7 +1,7 @@
 base     default
 author   Andreas Gohr
 email    andi@splitbrain.org
-date     2013-02-16
-name     DokuWiki Default Template
-desc     DokuWiki's default template until 2012
-url      http://www.dokuwiki.org/template:default
+date     2013-09-01
+name     Default Template
+desc     DokuWiki's old default template until 2012
+url      https://www.dokuwiki.org/template:default
