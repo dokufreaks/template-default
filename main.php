@@ -1,12 +1,16 @@
 <?php
 /**
- * DokuWiki Default Template
+ * DokuWiki Origin Resurrected Template
  *
- * This is the template you need to change for the overall look
- * of DokuWiki.
+ * This was originally the default template for dokuwiki called "default"
+ * but later in 2012 that changed to a different template called "dokuwiki"
+ * I (desbest) have volunteered to maintain this to make it compatible with
+ * newer dokuwiki versions, as I have a use for this template for me to add
+ * modifications to it for my website.
  *
  * @link   http://dokuwiki.org/templates
  * @author Andreas Gohr <andi@splitbrain.org>
+ * @author desbest <afaninthehouse@gmail.com>
  */
 
 // must be run from within DokuWiki
@@ -28,6 +32,7 @@ if (!defined('DOKU_INC')) die();
   <?php echo tpl_favicon(array('favicon', 'mobile')) ?>
 
   <?php /*old includehook*/ @include(dirname(__FILE__).'/meta.html')?>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -39,7 +44,9 @@ if (!defined('DOKU_INC')) die();
 
     <div class="header">
       <div class="pagename">
-        [[<?php tpl_link(wl($ID,'do=backlink'),tpl_pagetitle($ID,true),'title="'.$lang['btn_backlink'].'"')?>]]
+        <!-- [[ -->
+        <?php tpl_link(wl($ID,'do=backlink'),tpl_pagetitle($ID,true),'title="'.$lang['btn_backlink'].'"')?>
+        <!-- ]] -->
       </div>
       <div class="logo">
         <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]"')?>
@@ -120,8 +127,10 @@ if (!defined('DOKU_INC')) die();
         <?php tpl_button('index')?>
         <?php tpl_button('top')?>&#160;
       </div>
-      <div class="clearer"></div>
+      <div id="br-cl" class="clearer"></div>
     </div>
+
+  <div class="clearer"></div><?php tpl_flush()?> <!-- desbest edit -->
 
   </div>
 
