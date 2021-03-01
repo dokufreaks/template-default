@@ -28,6 +28,7 @@
 }
 
 /* media manager and config manager for mobile */
+/* See more: https://gitlab.com/-/snippets/2071984 */
 @media screen and (max-width: 480px){
   fieldset, 
   #mediamanager__page, 
