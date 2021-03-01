@@ -1,4 +1,4 @@
-# Origin Resurrected Template
+# Default Template
 
 This used to be the [default template for DokuWiki](http://dokuwiki.org/template:default) until 2012.
 It was designed by [Andreas Gohr](http://splitbrain.org) and also contributed to by the open source community.
@@ -9,6 +9,6 @@ However me [desbest](http://desbest.com) have managed to add some minor changes 
 
 * Metadata is in template.info.txt
 * Under the GPL license (see copying file)
-* [More information](http://dokuwiki.org/template:nostalgia)
+* [More information](http://dokuwiki.org/template:default)
 
-![origin resurrected screenshot](https://i.imgur.com/loAkjsa.png)
+![no longer default template screenshot](https://i.imgur.com/loAkjsa.png)
