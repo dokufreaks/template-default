@@ -127,7 +127,6 @@ if (!defined('DOKU_INC')) die();
         <?php tpl_button('index')?>
         <?php tpl_button('top')?>&#160;
       </div>
-      <div id="br-cl" class="clearer"></div>
     </div>
 
   <div class="clearer"></div><?php tpl_flush()?> <!-- desbest edit -->
