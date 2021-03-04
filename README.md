@@ -5,7 +5,7 @@ It was designed by [Andreas Gohr](http://splitbrain.org) and also contributed to
 It was extracted from the core late 2013 and since then not actively maintained by the core developers anymore.
 Now the default template for dokuwiki [is called dokuwiki](http://dokuwiki.org).
 
-However me [desbest](http://desbest.com) have managed to add some minor changes to make it compatible with 2018 Greebo.
+However me [desbest](http://desbest.com) have managed to add some minor changes to make it compatible with dokuwiki version 2018 Greebo.
 
 * Metadata is in template.info.txt
 * Under the GPL license (see copying file)
