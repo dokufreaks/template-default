@@ -67,7 +67,10 @@ div.dokuwiki div.meta {
   clear: both;
   margin-top: 1em;
   color: __text_alt__;
-  font-size: 70%;
+  /*font-size: 70%;*/
+  font-size: 1em;
+  margin-left: 0.85em;
+  /*desbest edit */
 }
 
 div.dokuwiki div.meta div.user {

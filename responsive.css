@@ -1,0 +1,67 @@
+@media screen and (max-width: 480px) {
+	div.dokuwiki .bar-right { display: inline; float: none; }
+	#dw__search button { margin: 0px; margin-left: 1em; }
+	button { margin: 0px 8px 16px 8px; padding: 8px !important; }
+	button:first-of-type { margin-left: 0px; }
+	button.toolbutton { margin: 8px 8px !important; }
+	button:first-child, button.toolbutton:first-child { margin-left: 8px !important; }	
+	button img { padding: 8px; }
+	div.dokuwiki #dw__toc ul { line-height: 2em; }
+	div.dokuwiki #dw__toc { font-size: 1em; }
+	div.dokuwiki #dw__toc ul li { margin: 0.35em 0px; }
+	div.dokuwiki div.breadcrumbs { padding: 1em; }
+	.page li, .page dd { margin: 0.85em 0px; }
+  
+  /* rearrange elements * /
+  /* 
+  https://webdesign.tutsplus.com/tutorials/a-few-different-css-methods-for-column-ordering--cms-27079
+  https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
+  https://www.digitalocean.com/community/tutorials/css-css-grid-layout-fr-unit
+  */
+  .maincontentrow { 
+    display: grid !important; 
+    grid-template-columns: repeat(1);
+  }
+  .right { order: 2; float: none !important; }
+  .left { order: 3; float: none !important; }
+  /* /////_______//// */
+}
+
+/* media manager and config manager for mobile */
+/* See more: https://gitlab.com/-/snippets/2071984 */
+@media screen and (max-width: 480px){
+  fieldset, 
+  #mediamanager__page, 
+  #mediamanager__page .filelist{ 
+    max-width: 100%; min-width: unset; 
+  }
+  #mediamanager__page .file, 
+  #mediamanager__page .namespaces, 
+  #mediamanager__page .panel { 
+    width: 100%; clear: both; float: none;
+  }
+
+/* #mediamanager__page .namespaces { min-width: unset; } */
+
+  /*.page li, .page dd { margin: 1.35em 0px !important; display: block; }*/
+  #config__manager tr { }
+  #config__manager td { display: block;  padding: 1.15em 0px; max-width: 75%;  }
+  #config__manager fieldset {  margin: 1em 0px; width: 100%; box-sizing: border-box; }
+
+     /* make <select> not exceed it's parent div's width */
+    /* https://stackoverflow.com/q/44810056/337306 */
+    div.input, label.nowrap { display: flex; } select { width: 100%; flex-shrink: 1; }
+
+  fieldset { width: unset; }
+  #config__manager fieldset td.value { width: unset; }
+  td.label { word-wrap: anywhere; }
+
+  #config__manager td .input, 
+  #config__manager fieldset td.value, 
+  input, textarea,
+  #config__manager td input.edit,
+  #config__manager td textarea.edit { 
+    max-width: 100%; 
+    width: auto;
+  }
+}

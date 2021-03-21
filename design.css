@@ -1,3 +1,6 @@
+/*desbest edit */
+.btn_secedit { float: right; }
+
 /**
  * Design elements for default Template
  *
@@ -190,7 +193,14 @@ div.dokuwiki form#dw__editform div.license {
 
 /* --------- buttons ------------------- */
 
+button { margin: 3px 8px; }
+button { padding: 3px !important; }
+button:first-child, button.toolbutton:first-child { margin-left: 0px !important; }
+button.toolbutton { padding: 0px !important; margin: 8px 3px !important; }
+button img { padding: 5px; }
+
 div.dokuwiki input.button,
+button, /* desbest edit */
 div.dokuwiki button.button {
   border: 1px solid __border__;
   color: __text__;
@@ -205,6 +215,7 @@ div.dokuwiki button.button {
 
 /* nice alphatransparency background except for IE <7 */
 html>body div.dokuwiki input.button,
+button, /* desbest edit */
 html>body div.dokuwiki button.button {
   background:  __background__ url(images/buttonshadow.png) repeat-x bottom;
 }
@@ -340,13 +351,18 @@ div.dokuwiki div.preview {
 div.dokuwiki div.breadcrumbs {
   background-color: __background_neu__;
   color: __text_neu__;
-  font-size: 80%;
+  /*font-size: 80%;*/
+  font-size: 1em;
+  /*desbest edit */
   padding: 0 0 0 4px;
+  padding-left: 0.85em;
 }
 
 div.dokuwiki span.user {
   color: __text_other__;
-  font-size: 90%;
+  /*font-size: 90%;*/
+  font-size: 1em;
+  /*desbest edit */
 }
 
 div.dokuwiki li.minor {
@@ -622,6 +638,18 @@ div.dokuwiki #dw__toc a:active {
 }
 
 /* ---------------------------- Diff rendering --------------------------*/
+/* desbest edit begin */
+.dokuwiki table.diff_sidebyside th {
+    width: 50%;
+}
+.dokuwiki table.diff .diff-lineheader {
+    width: .7em;
+    text-align: right;
+}
+[dir=rtl] .dokuwiki table.diff .diff-lineheader {
+    text-align: left;
+}
+.dokuwiki table.diff .diff-lineheader, /* desbest edit end */
 div.dokuwiki table.diff {
   background-color: __background__;
   width: 100%;
@@ -632,6 +660,7 @@ div.dokuwiki td.diff-blockheader {
 div.dokuwiki table.diff th {
   border-bottom: 1px solid __border__;
   font-size: 110%;
+  width: 50%; /*desbest edit*/
   font-weight: normal;
   text-align: left;
 }
@@ -790,7 +819,7 @@ div.footerinc {
 
 div.dokuwiki div.ajax_qsearch {
   position: absolute;
-  right: 237px;;
+  right: 237px;
   width: 200px;
   opacity: 0.9;
   display: none;
@@ -852,7 +881,9 @@ div.dokuwiki dl.img_tags dd {
 
 div.dokuwiki div.imagemeta {
   color: __text_neu__;
-  font-size: 70%;
+  /*font-size: 70%;*/
+  font-size: 1em;
+  /*desbest edit */
   line-height: 95%;
 }
 

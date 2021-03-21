@@ -1,7 +1,7 @@
 base     default
-author   Andreas Gohr
-email    andi@splitbrain.org
-date     2013-09-01
-name     Default Template
-desc     DokuWiki's old default template until 2012
+author   desbest
+email    afaninthehouse@gmail.com
+date     2021-02-28
+name     Origin Resurrected Template
+desc     Based on the default template until 2012, but updated for later versions
 url      https://www.dokuwiki.org/template:default
